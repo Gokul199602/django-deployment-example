@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+{% extends "first_app/base.html" %}
+ {% block body_block %}
+    <h1>Welcome to url templates</h1>
+    <a href="{% url 'first_app:other' %}">OTHER PAGE</a>
+    <a href="{% url 'first_app:index' %}">come to index</a>
+  {% endblock %}
